@@ -1,0 +1,67 @@
+# do ../modelsim_fp_series_script.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:35:28 on May 20,2024
+# vlog -reportprogress 300 ../float_series_add_tb.v ../../fp_series_add.v ../../float_add.v 
+# -- Compiling module test_fp_series_add
+# -- Compiling module fp_series_add
+# -- Compiling module fp_adder_altbarrel_shift_35e
+# -- Compiling module fp_adder_altbarrel_shift_olb
+# -- Compiling module fp_adder_altpriority_encoder_3e8
+# -- Compiling module fp_adder_altpriority_encoder_6e8
+# -- Compiling module fp_adder_altpriority_encoder_be8
+# -- Compiling module fp_adder_altpriority_encoder_3v7
+# -- Compiling module fp_adder_altpriority_encoder_6v7
+# -- Compiling module fp_adder_altpriority_encoder_bv7
+# -- Compiling module fp_adder_altpriority_encoder_r08
+# -- Compiling module fp_adder_altpriority_encoder_rf8
+# -- Compiling module fp_adder_altpriority_encoder_qb6
+# -- Compiling module fp_adder_altpriority_encoder_nh8
+# -- Compiling module fp_adder_altpriority_encoder_qh8
+# -- Compiling module fp_adder_altpriority_encoder_vh8
+# -- Compiling module fp_adder_altpriority_encoder_fj8
+# -- Compiling module fp_adder_altpriority_encoder_n28
+# -- Compiling module fp_adder_altpriority_encoder_q28
+# -- Compiling module fp_adder_altpriority_encoder_v28
+# -- Compiling module fp_adder_altpriority_encoder_f48
+# -- Compiling module fp_adder_altpriority_encoder_e48
+# -- Compiling module fp_adder_altfp_add_sub_e9m
+# -- Compiling module fp_adder
+# -- Compiling module float_add
+# 
+# Top level modules:
+# 	test_fp_series_add
+# End time: 05:35:29 on May 20,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.test_fp_series_add -voptargs=""+acc"" 
+# Start time: 05:35:29 on May 20,2024
+# Loading work.test_fp_series_add
+# Loading work.fp_series_add
+# Loading work.float_add
+# Loading work.fp_adder
+# Loading work.fp_adder_altfp_add_sub_e9m
+# Loading work.fp_adder_altbarrel_shift_35e
+# Loading work.fp_adder_altbarrel_shift_olb
+# Loading work.fp_adder_altpriority_encoder_qb6
+# Loading work.fp_adder_altpriority_encoder_r08
+# Loading work.fp_adder_altpriority_encoder_be8
+# Loading work.fp_adder_altpriority_encoder_6e8
+# Loading work.fp_adder_altpriority_encoder_3e8
+# Loading work.fp_adder_altpriority_encoder_bv7
+# Loading work.fp_adder_altpriority_encoder_6v7
+# Loading work.fp_adder_altpriority_encoder_3v7
+# Loading work.fp_adder_altpriority_encoder_rf8
+# Loading work.fp_adder_altpriority_encoder_e48
+# Loading work.fp_adder_altpriority_encoder_fj8
+# Loading work.fp_adder_altpriority_encoder_vh8
+# Loading work.fp_adder_altpriority_encoder_qh8
+# Loading work.fp_adder_altpriority_encoder_nh8
+# Loading work.fp_adder_altpriority_encoder_f48
+# Loading work.fp_adder_altpriority_encoder_v28
+# Loading work.fp_adder_altpriority_encoder_q28
+# Loading work.fp_adder_altpriority_encoder_n28
+# Loading 220model_ver.lpm_add_sub
+# Loading 220model_ver.lpm_compare
+# Break key hit
+# Break in Module fp_series_add at ../../fp_series_add.v line 52
+# End time: 05:35:39 on May 20,2024, Elapsed time: 0:00:10
+# Errors: 0, Warnings: 0

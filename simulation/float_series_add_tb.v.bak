@@ -1,0 +1,56 @@
+`timescale 1 ps/ 1 ps
+module test_float_add;
+
+	reg clk;
+	reg reset;
+	reg [31:0] a;
+   reg [31:0] b;
+   wire [31:0] result;
+	wire nan;
+	wire overflow;
+	wire underflow;
+	wire zero;
+	
+	float_add test_add (
+		.clk(clk),
+		.reset(reset),
+		.a(a),
+		.b(b),
+		.result(result),
+		.nan(nan),
+		.overflow(overflow),
+		.underflow(underflow),
+		.zero(zero)
+	);
+	
+	function [31:0] generate_random_float(input integer seed);
+		reg [7:0] exponent;
+		reg [22:0] mantissa;
+		reg sign;
+		begin
+			exponent = $urandom(seed) % (2**8);
+			mantissa = $urandom(seed) % (2**23);
+			sign = $urandom(seed) % 2;
+			generate_random_float = {sign, exponent, mantissa};
+		end
+	endfunction
+	
+	always #5000 clk = ~clk;
+	
+	initial begin
+		clk = 0;
+		reset = 1;
+		#100000
+		reset = 0;
+	end
+	
+	initial begin
+		a = generate_random_float($random);
+		b = generate_random_float($random);
+	
+	end
+		
+	initial
+		$monitor("Result = %h", result);
+	
+endmodule

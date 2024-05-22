@@ -1,0 +1,11 @@
+vlib work
+
+vlog ../float_test_tb.v ../../float_add.v
+
+vsim work.test_float_add
+
+add wave sim:/test_float_add/*
+
+run -all
+
+wave zoom full
